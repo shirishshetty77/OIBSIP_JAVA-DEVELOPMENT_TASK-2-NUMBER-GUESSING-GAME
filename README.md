@@ -1,45 +1,61 @@
 # 🎮 Number Guessing Game – Java Swing
 
-A **modern Java Swing Number Guessing Game** with a **dark theme, blue gradient UI**, and a **clean, centered layout**.  
-This project is designed in the same **professional style** as the *ATM Interface project*, making it ideal for:
+A **full-screen Java Swing Number Guessing Game** featuring a **dark theme with blue gradient panels**, a **clean, symmetric layout**, and a **well-structured object-oriented design**.
+The project focuses on combining **game logic**, **round management**, and **score tracking** with a **modern Swing UI**.
 
-- College mini-projects
-- GitHub portfolio showcase
-- Java Swing UI practice
+This project is suitable for:
+
+* College mini / academic projects
+* Java Swing practice
+* GitHub portfolio showcase
 
 ---
 
 ## 🚀 Features
 
-- 🎨 **Dark Mode UI with Blue Gradients**
-- 🖥️ **Full-Screen Immersive Layout**
-- 🎯 **Clear UI Hierarchy**
-  - Center → Main game interaction (large & prominent)
-  - Left → Round information
-  - Right → Score display
-- 🔢 Guess a random number between **1 and 100**
-- 🔁 Multiple rounds with automatic progression
-- ❌ Limited attempts per round
-- 🧠 Score based on remaining attempts
-- ⌨️ **ESC key support to exit**
-- 🧩 Clean separation between UI and game logic
+* 🎨 **Dark UI with Blue Gradient Panels**
+* 🖥️ **Full-screen immersive gameplay**
+* 🎯 **Clear UI hierarchy**
+
+  * Center: Main gameplay (input, guess, feedback)
+  * Left: Round information
+  * Right: Score tracking
+* 🔢 Random number guessing between **1 and 100**
+* 🔁 Automatic round progression
+* ❌ Limited attempts per round
+* 🧮 Score calculated based on remaining attempts
+* ⌨️ **ESC key support to exit**
+* 🧩 Clean separation of UI and logic
 
 ---
 
-## 🧱 Project Structure
+## 📁 Project Structure
 
 ```
-Number-Guessing-Game/
-├── src/
-│   ├── game/
-│   │   ├── GameLogic.java        # Core guessing logic
-│   │   ├── RoundManager.java     # Handles round progression
-│   │   └── ScoreBoard.java       # Score calculation
-│   │
-│   └── ui/
-│       └── GameWindow.java       # Main Swing UI (gradient + dark theme)
+NUMBER GUESSING GAME/
 │
-└── README.md
+├── README.md
+│
+└── src/
+    ├── game/
+    │   ├── GameLogic.java
+    │   │   - Generates random numbers
+    │   │   - Validates guesses
+    │   │   - Tracks attempts
+    │
+    │   ├── RoundManager.java
+    │   │   - Manages round count
+    │   │   - Handles round transitions
+    │
+    │   └── ScoreBoard.java
+    │       - Calculates and stores score
+    │
+    └── ui/
+        └── GameWindow.java
+            - Full Swing UI
+            - Gradient panels
+            - Event handling
+            - Layout management
 ```
 
 ---
@@ -62,39 +78,40 @@ Number-Guessing-Game/
                     [         EXIT GAME         ]
 ```
 
-✔ Center components are **larger and dominant**  
-✔ Side panels are informational  
-✔ Gradients improve visual appeal  
+---
+
+## 🛠️ Technologies Used
+
+* **Java SE (JDK 8+)**
+* **Java Swing**
+* **AWT (Graphics2D, GradientPaint)**
+* **Layouts**
+
+  * BorderLayout
+  * BoxLayout
+  * GridLayout
+* **Object-Oriented Programming**
 
 ---
 
-## 🛠️ Tech Stack
+## ⚡ How to Run
+
+### Using IDE
+
+1. Open the project in IntelliJ / Eclipse / NetBeans
+2. Ensure JDK 8+ is configured
+3. Run:
 
 ```
-✔ Java 8+
-✔ Java Swing
-✔ AWT (Graphics2D, GradientPaint)
-✔ BorderLayout / BoxLayout / GridLayout
-✔ Object-Oriented Programming
+ui.GameWindow
 ```
 
----
+### Using Command Line
 
-## ⚡ Quick Start
-
-### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/Number-Guessing-Game.git
-cd Number-Guessing-Game/src
-```
-
-### 2️⃣ Compile & Run
-```bash
-javac ui/GameWindow.java
+javac src/ui/GameWindow.java
 java ui.GameWindow
 ```
-
-*(Or simply run `GameWindow` from your IDE)*
 
 ---
 
@@ -102,51 +119,34 @@ java ui.GameWindow
 
 1. Enter a number between **1 and 100**
 2. Click **Guess**
-3. You have limited attempts per round
-4. Feedback is shown:
-   - Too high
-   - Too low
-   - Correct
-5. Score is calculated based on remaining attempts
-6. Game automatically moves to the next round
+3. Feedback will indicate:
+
+   * Too high
+   * Too low
+   * Correct
+4. Points are awarded based on remaining attempts
+5. New rounds start automatically
 
 ---
 
 ## 📚 Learning Outcomes
 
-This project helps you understand:
-
-- Java Swing UI design
-- Creating gradient backgrounds using `Graphics2D`
-- Managing complex layouts
-- Event handling (`ActionListener`, keyboard shortcuts)
-- Clean code organization and UI scaling
-
----
-
-## 🔧 Customization Ideas
-
-- 🎚️ Difficulty levels (Easy / Medium / Hard)
-- 💾 Save high scores
-- 🔊 Sound effects
-- 🎨 FlatLaf / Material UI theme
-- 🎞️ Animations
-- ☕ JavaFX version
-
----
-
-## 👤 Author
-
-**Supreme Tuluvaa**  
-Java Developer | Swing UI Designer
+* Java Swing UI design
+* Custom gradient painting
+* Event handling & keyboard shortcuts
+* Layout management for large screens
+* Clean project structuring
 
 ---
 
 ## 📄 License
 
-MIT License © 2025  
+MIT License © 2025
 Free for educational and personal use.
 
 ---
 
 ### Built with ❤️ using Java Swing
+
+---
+
