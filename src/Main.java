@@ -1,0 +1,8 @@
+import javax.swing.*;
+import ui.GameWindow;
+
+public class Main {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(GameWindow::new);
+    }
+}
